@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import calculate from '../processors/calculate';
 import DigitButtons from './digitButtons';
 import OperatorButtons from './operatorButtons'
+import styles from  '../skin/styles.module.css'
 
 class Calculator extends Component {
 
@@ -19,6 +20,10 @@ class Calculator extends Component {
         this.digitButtonHandler = this.digitButtonHandler.bind(this);
         this.operatorButtonHandler = this.operatorButtonHandler.bind(this);
         this.acButtonHandler = this.acButtonHandler.bind(this);
+    }
+
+    componentDidMount(){
+        console.log('styles', styles);
     }
 
     equalsButtonHandler(){
@@ -62,14 +67,17 @@ class Calculator extends Component {
     
     render(){
         return(
-            <div className="calculator">
-                <div className="display">{this.state.display}</div>
-                <div className="buttonPad">
+            <div className={styles.calculator}>
+                <div className={styles.display}>{this.state.display}</div>
+                <div className={styles.numpad}>
                     <DigitButtons clickHandler={this.digitButtonHandler} />
-                    <OperatorButtons clickHandler={this.operatorButtonHandler} />
-                    <button className="equalsButton" onClick={this.equalsButtonHandler}>=</button>
-                    <button className="acButton" onClick={this.acButtonHandler}>AC</button>
+                    <button className={styles.digitbutton} onClick={this.equalsButtonHandler}>=</button>
                 </div>
+                <div className={styles.operatorpad}>
+                    <OperatorButtons clickHandler={this.operatorButtonHandler} />
+                    <button className={styles.operatorbutton} onClick={this.acButtonHandler}>AC</button>
+                </div>
+                <img src="logo.svg" style={{width: '200px', marginTop: '10px', marginLeft: '-30px'}}/>
             </div>
         )
     }
