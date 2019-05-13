@@ -1,6 +1,7 @@
 ## What works
 
 All basic calculator functionality is working, unit tests for the calculator methods
+To run tests: `$ yarn test a`
 
 ### What doesn't / potential improvements
 
