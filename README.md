@@ -6,17 +6,17 @@ All basic calculator functionality is working, unit tests for the calculator met
 
 In no particular order:
 
-Shortening of recurring decimals
-Replace '*' and '/' button labelling with proper symbols
-Handling of negative numbers
-Better button layout
-Replacing CSS with Sass, better CSS overall, responsive CSS
-Add Enzyme tests for the button handlers
-More thorough unit tests for calculator methods
-Support for keyboard events
-Error handling for adding a second decimal to a number
-Support for follow on calculations after using the '=' key
-Additional methods eg percentages, square root etc.
+- Shortening of recurring decimals
+- Replace '*' and '/' button labelling with proper symbols
+- Handling of negative numbers
+- Better button layout
+- Replacing CSS with Sass, better CSS overall, responsive CSS
+- Add Enzyme tests for the button handlers
+- More thorough unit tests for calculator methods
+- Support for keyboard events
+- Error handling for adding a second decimal to a number
+- Support for follow on calculations after using the '=' key
+- Additional methods eg percentages, square root etc.
 
 ### Time spent
 
