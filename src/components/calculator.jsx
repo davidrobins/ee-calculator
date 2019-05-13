@@ -22,10 +22,6 @@ class Calculator extends Component {
         this.acButtonHandler = this.acButtonHandler.bind(this);
     }
 
-    componentDidMount(){
-        console.log('styles', styles);
-    }
-
     equalsButtonHandler(){
         const {n1, n2, op} = this.state;
         if(n1 !== null && n2 !== null && op !== null){

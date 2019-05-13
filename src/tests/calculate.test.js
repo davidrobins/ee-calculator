@@ -1,7 +1,7 @@
 import calculate, { getScaler } from '../processors/calculate';
 
 
-describe.skip('calculate function: positive integers', () => {
+describe('calculate function: positive integers', () => {
     it('adds two positive integers correctly', () => {
         const data = {
             n1: 2,
@@ -43,7 +43,7 @@ describe.skip('calculate function: positive integers', () => {
     });
 })
 
-describe.skip('calculate function: negative integers', () => {
+describe('calculate function: negative integers', () => {
     it('adds two positive integers correctly', () => {
         const data = {
             n1: -2,
