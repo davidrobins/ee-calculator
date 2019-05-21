@@ -64,10 +64,10 @@ class Calculator extends Component {
     render(){
         return(
             <div className={styles.calculator}>
-                <div className={styles.display}>{this.state.display}</div>
+                <div className={styles.display} id="display">{this.state.display}</div>
                 <div className={styles.numpad}>
                     <DigitButtons clickHandler={this.digitButtonHandler} />
-                    <button className={styles.digitbutton} onClick={this.equalsButtonHandler}>=</button>
+                    <button className={styles.digitbutton} id="op_equals" onClick={this.equalsButtonHandler}>=</button>
                 </div>
                 <div className={styles.operatorpad}>
                     <OperatorButtons clickHandler={this.operatorButtonHandler} />
