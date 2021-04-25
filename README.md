@@ -22,6 +22,6 @@ In no particular order:
 
 ### Time spent
 
-Somewhere around 2.5 to 3 hours, more than planned but resolving javascript's unique handling of decimal calculations took a little time.
+Somewhere around 2.5 to 3 hours, more than planned but tackling javascript's unique handling of decimal calculations took a little time.
 
 Version Number: 627d7be039e0085025a51d47e42bdd970409ec1c
